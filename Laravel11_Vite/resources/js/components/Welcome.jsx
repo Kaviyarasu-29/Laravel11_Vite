@@ -6,9 +6,9 @@ export default function Welcome({ title, subheading, mail }) {
     return (
         <>
             <div className="container">
-                <div className="text-info">
-                    <h3 className="w-50"> {title} </h3>
-                    <h3 className="w-50"> {subheading} </h3>
+                <div className="text-primary">
+                    <h3 className="w-50 "> {title} </h3>
+                    <h3 className="w-50 text-danger"> {subheading} </h3>
                     <h3 className="w-50"> {mail} </h3>
                 </div>
 
@@ -18,7 +18,7 @@ export default function Welcome({ title, subheading, mail }) {
                     {/* <img src={logo} alt="" className="w-100 h-100 border border-5 rounded-4"
                         style="object-fit: cover; object-position: center;" /> */}
 
-                    <img src={logo} className="w-100 h-100 border border-5 rounded-4" style={{objectfit: 'cover', objectposition: 'center'}} />
+                    <img src={logo} className="w-100 h-100 border border-danger border-5 rounded-4" style={{objectfit: 'cover', objectposition: 'center'}} />
                 </div>
             </div>
         </div >

@@ -1,5 +1,5 @@
 import './bootstrap';
-import 'bootstrap';
+import 'bootstrap'; 
 import '../sass/app.scss'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
