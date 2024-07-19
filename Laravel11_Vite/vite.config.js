@@ -7,6 +7,8 @@ import manifestSRI from 'vite-plugin-manifest-sri';
 export default defineConfig({
     plugins: [
         laravel({
+            buildDirectory: 'bundle_Build_Namechange',
+            hotFile: 'storage/vite.hot',
             input: [
                 'resources/sass/app.scss',
                 // 'resources/js/app.js',
@@ -27,6 +29,9 @@ export default defineConfig({
         }),
         react(),
     ],
+    build: {
+        manifest: 'namechange_manifest.json'
+    },
     resolve: {
         alias: [
             // method 2

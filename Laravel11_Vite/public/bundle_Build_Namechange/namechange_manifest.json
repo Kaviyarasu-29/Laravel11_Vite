@@ -1,0 +1,41 @@
+{
+  "resources/images/dog.jpg": {
+    "file": "assets/dog-V2yka6eh.jpg",
+    "src": "resources/images/dog.jpg"
+  },
+  "resources/images/puppy.jpg": {
+    "file": "assets/puppy-D68DsaN3.jpg",
+    "src": "resources/images/puppy.jpg"
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-BqDv8WOb.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "imports": [
+      "resources/js/components/Welcome.jsx"
+    ],
+    "css": [
+      "assets/app-CFjdGlIs.css"
+    ],
+    "assets": [
+      "assets/puppy-D68DsaN3.jpg"
+    ]
+  },
+  "resources/js/components/Welcome.jsx": {
+    "file": "assets/Welcome-BVBiHVO-.js",
+    "name": "Welcome",
+    "src": "resources/js/components/Welcome.jsx",
+    "isEntry": true
+  },
+  "resources/js/components/Welcome.vue": {
+    "file": "assets/Welcome-l0sNRNKZ.js",
+    "name": "Welcome",
+    "src": "resources/js/components/Welcome.vue",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-CFjdGlIs.css",
+    "src": "resources/js/app.jsx"
+  }
+}
