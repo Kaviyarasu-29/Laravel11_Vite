@@ -1,5 +1,5 @@
 import './bootstrap';
-import 'bootstrap'; 
+import 'bootstrap';
 import '../sass/app.scss'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -15,7 +15,7 @@ let mail = import.meta.env.VITE_MAIN_HOST;
 ReactDOM.createRoot(document.getElementById('app'))
     .render(<Welcome title={title} subheading={subheading} mail={mail} />);
 
-alert("hi");
+// alert("hi");
 
 
 

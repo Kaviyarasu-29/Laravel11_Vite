@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue'
 import react from '@vitejs/plugin-react';
+import manifestSRI from 'vite-plugin-manifest-sri';
 
 export default defineConfig({
     plugins: [
@@ -15,6 +16,7 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        manifestSRI(),
         vue({
             template: {
                 transformAssetUrls: {

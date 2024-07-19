@@ -27,5 +27,19 @@ class AppServiceProvider extends ServiceProvider
         Vite::macro('image', function (string $asset) {
             return Vite::asset("./resources/images/{$asset}");
         });
+
+        Vite::useScriptTagAttributes([
+            'integrity' => false,
+            'async' => true,
+            'data-custom-attributes' => 'whatever value we needed'
+        ]);
+
+        Vite::useScriptTagAttributes(fn (string $src, string $url, array|null $chunk, array|null $manifest) => [
+            'data-custom-attributes' => $src === 'resources/js/app.jsx' ? false : true
+        ]);
+
+        Vite::useStyleTagAttributes([
+            'data-css-theme' => 'bg-secondary-subtle'
+        ]);
     }
 }
